@@ -1,0 +1,18 @@
+# Entorno mínimo para correr mcp_skeleton.py y llm_client.py
+# Versiones probadas el 2026-10-07 en macOS (Apple Silicon)
+# Modelo de Claude usado en llm_client.py: claude-sonnet-5-5
+name: mcp-physics
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - mcp==2.2.0
+      - astroquery==0.4.11
+      - astropy==8.0.1
+      - arxiv==4.0.1
+      - anthropic==1.8.0
+      - python-dotenv==1.2.3
+      - numpy==2.4.6
+      - pydantic==2.13.5
